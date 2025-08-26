@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-book</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+       <div class="header-container">
+           <div class="logo"><a href="../index.html"><img src="../assets/images/Logo-completa-semfundo-reduzida.png" alt="logo"></a></div>
+           <nav>
+                <a href="../pages/add-book.html"><button class="button">+</button></a>
+           </nav>
+       </div>
+    </header>
+    <main>
+        <div class="add-book-container">
+            <h1 class="title is-3">Adicionar Livro</h1>
+            <form action="#" method="post">
+                <div class="field">
+                    <label class="label">Título do Livro</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Digite o título do livro" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Autor</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Digite o nome do autor" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Data</label>
+                    <div class="control">
+                        <input class="input" type="date" placeholder="Selecione a data que você leu o livro" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Capa do Livro (URL)</label>
+                    <div class="control">
+                        <input class="input" type="url" placeholder="Cole o link da capa do livro" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="avaliacao-select">Avaliação</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="avaliacao-select" required>
+                                <option value="" disabled selected>Selecione a avaliação</option>
+                                <option value="1">★ -1 Estrela</option>
+                                <option value="2">★★ -2 Estrelas</option>
+                                <option value="3">★★★ -3 Estrelas</option>
+                                <option value="4">★★★★ -4 Estrelas</option>
+                                <option value="5">★★★★★5 Estrelas</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Resenha</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Escreva o que você achoudo livro" required></textarea>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" type="submit">Adicionar Livro</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-light" type="reset">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>All rights reserveds @2025</p>
+        </div>
+    </footer>
+</body>
+</html>

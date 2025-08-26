@@ -1,0 +1,138 @@
+/*To all pages*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-primary: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: var(--font-primary);
+}
+/*Header*/
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #cfe2dd;
+}
+
+header img{
+    flex: 1;
+    max-width: 60%;
+}
+
+/*Footer*/
+footer{
+    height: 1rem;
+}
+
+/*Index*/
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+.book-cards-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 40px;
+
+    margin: 0 auto;
+    padding: 26px 20px;
+}
+
+.book-cards{
+    background-color: #FBD1B2;
+    border-radius: 12px; 
+}
+.book-cards section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book-cards img{
+    height: 320px;
+    
+    object-fit: cover;
+    border-radius: 12px;
+}
+.book-cards h2{
+    font-size: 26px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.book-cards .rating{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*Add-book*/
+.add-book-container{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #dddcdb;
+    border-radius: 12px;
+}
+.add-book-container h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: black;
+}
+.label{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 450;
+}
+.input, .textarea, .select select{
+    background-color: white;
+    border: none;
+}
+select select:focus{
+    border-color: #485fc7;
+    box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+}
+.input::placeholder,
+.textarea::placeholder,
+.select select:invalid { /* :invalid pega o "Selecione a avaliação" */
+    color: #8e8e8e;
+    font-style: italic;
+}
+.input,
+.textarea,
+.select select,
+.select select option {
+    color: black;         /* GARANTE que o texto final seja preto */
+    font-style: normal;   /* Tira o itálico do texto final */
+}
+.input:focus,
+.textarea:focus,
+.select select:focus {
+    color: black;                 /* Texto digitado fica preto */
+    background-color: #f0f5ff;
+    border-color: #005eff;
+    box-shadow: 0 0 0 0.125em rgba(0, 94, 255, 0.25);
+}
+::selection {
+    background-color: #005eff;
+    color: white;
+}
+
+.add-book-container .field{
+    margin-bottom: 15px;
+}
+.add-book-container .control{
+    display: flex;
+    flex-direction: column;
+}
+.add-book-container .button{
+    margin-top: 10px;
+}
