@@ -18,7 +18,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    background-color: #cfe2dd;
+    background: rgb(255, 220, 226);
 }
 
 header img{
@@ -50,6 +50,12 @@ main{
 .book-cards{
     background-color: #FBD1B2;
     border-radius: 12px; 
+    cursor: pointer;
+}
+.book-cards:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }
 .book-cards section{
     display: flex;
@@ -70,6 +76,11 @@ main{
 .book-cards .rating{
     font-size: 30px;
     font-weight: 400;
+}
+button:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
 }
 
 /*Add-book*/
@@ -135,4 +146,59 @@ select select:focus{
 }
 .add-book-container .button{
     margin-top: 10px;
+}
+
+/*Details*/
+.details-container{
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #e7e7e7;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+.book-cover{
+    flex: 1;
+    padding: 10px;
+}
+.book-cover img{
+    height: 600px;
+    width: auto;
+    border-radius: 12px;
+}
+.book-info{
+    flex: 2;
+    padding: 30px;
+}
+.book-info h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.696);
+}
+.book-info h2{
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.556);
+}
+.book-info p{
+    font-size: 22px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.556);
+}
+.book-info .rating{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: rgb(0, 0, 0.696);
+}
+@media (max-width: 768px){
+    .details-container{
+        flex-direction: column;
+    }
+    .book-cover img{
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
