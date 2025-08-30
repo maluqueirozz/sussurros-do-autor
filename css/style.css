@@ -26,6 +26,12 @@ header img{
     max-width: 60%;
 }
 
+header button{
+    max-width: 100px;
+    height: auto;
+    font-weight: 400px;
+}
+
 /*Footer*/
 footer{
     height: 1rem;
@@ -63,7 +69,8 @@ main{
     align-items: center;
 }
 .book-cards img{
-    height: 320px;
+    max-width: 250px;
+    height: auto;
     
     object-fit: cover;
     border-radius: 12px;
@@ -163,9 +170,8 @@ select select:focus{
     padding: 10px;
 }
 .book-cover img{
-    height: 600px;
-    width: auto;
     border-radius: 12px;
+   object-fit: cover;
 }
 .book-info{
     flex: 2;
@@ -200,6 +206,10 @@ select select:focus{
         height: auto;
         width: 100%;
         margin-bottom: 20px;
+    }
+    .book-cards-container{
+        flex-direction: column;
+        margin: 10px;
     }
 }
 @keyframes fadeIn {
